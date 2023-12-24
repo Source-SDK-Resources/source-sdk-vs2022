@@ -283,6 +283,8 @@ set_target_properties(
 	OUTPUT_NAME "server"
 	PREFIX ""
 	LIBRARY_OUTPUT_DIRECTORY "${GAMEDIR}/mod_hl2mp/bin"
+	LIBRARY_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/mod_hl2mp/bin"
+	LIBRARY_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/mod_hl2mp/bin"
 )
 
 target_use_server_base(server_hl2mp SERVER_HL2MP_EXCLUDE_SOURCES)
