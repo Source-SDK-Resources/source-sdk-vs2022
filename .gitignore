@@ -60,3 +60,6 @@ config.cfg
 [Rr]elease*/
 *.pdb
 .vs/
+
+# Default CMake build directory
+build/
