@@ -36,6 +36,8 @@ set_target_properties(
 	PROPERTIES
 	PREFIX ""
 	LIBRARY_OUTPUT_DIRECTORY "${GAMEDIR}/bin"
+	LIBRARY_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/bin"
+	LIBRARY_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/bin"
 )
 
 target_include_directories(

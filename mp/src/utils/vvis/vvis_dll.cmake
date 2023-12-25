@@ -75,6 +75,8 @@ add_library(vvis_dll MODULE ${VVIS_DLL_SOURCE_FILES})
 set_target_properties(
 	vvis_dll PROPERTIES
 	LIBRARY_OUTPUT_DIRECTORY "${GAMEDIR}/bin"
+	LIBRARY_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/bin"
+	LIBRARY_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/bin"
 )
 
 target_include_directories(

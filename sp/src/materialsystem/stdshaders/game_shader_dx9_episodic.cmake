@@ -8,6 +8,8 @@ set_target_properties(
 	game_shader_dx9_episodic PROPERTIES
 	PREFIX ""
 	LIBRARY_OUTPUT_DIRECTORY "${GAMEDIR}/mod_episodic/bin"
+	LIBRARY_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/mod_episodic/bin"
+	LIBRARY_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/mod_episodic/bin"
 )
 
 target_use_game_shader_dx9_base(game_shader_dx9_episodic)

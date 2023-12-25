@@ -21,6 +21,8 @@ add_executable(height2normal ${HEIGHT2NORMAL_SOURCE_FILES})
 set_target_properties(
 	height2normal PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY "${GAMEDIR}/bin"
+	RUNTIME_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/bin"
+	RUNTIME_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/bin"
 )
 
 target_include_directories(

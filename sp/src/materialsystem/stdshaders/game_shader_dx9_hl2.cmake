@@ -8,6 +8,8 @@ set_target_properties(
 	game_shader_dx9_hl2 PROPERTIES
 	PREFIX ""
 	LIBRARY_OUTPUT_DIRECTORY "${GAMEDIR}/mod_hl2/bin"
+	LIBRARY_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/mod_hl2/bin"
+	LIBRARY_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/mod_hl2/bin"
 )
 
 target_use_game_shader_dx9_base(game_shader_dx9_hl2)

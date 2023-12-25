@@ -31,6 +31,8 @@ add_executable(vtf2tga ${VTF2TGA_SOURCE_FILES})
 set_target_properties(
 	vtf2tga PROPERTIES
 	RUNTIME_OUTPUT_DIRECTORY "${GAMEDIR}/bin"
+	RUNTIME_OUTPUT_DIRECTORY_DEBUG "${GAMEDIR}/bin"
+	RUNTIME_OUTPUT_DIRECTORY_RELEASE "${GAMEDIR}/bin"
 )
 
 target_link_libraries(
