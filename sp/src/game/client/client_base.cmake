@@ -1190,6 +1190,17 @@ function(target_use_client_base target EXCLUDE_SOURCES)
 		"${CLIENT_BASE_DIR}/cbase.h"
 	)
 
+	# (Originally from client_base.vpc)
+	# FIXME: VS2022
+	#        particles.lib defines _hypot, and in VS2022, so does libucrt!
+	#        Ideally, we'd just fix particles.lib, but I'm not sure how yet
+	if ( MSVC )
+		target_link_options(
+			${target} PRIVATE
+			/FORCE:MULTIPLE
+		)
+	endif()
+
 	target_link_libraries(
 		${target} PRIVATE
 
